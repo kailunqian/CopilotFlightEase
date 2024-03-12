@@ -1,0 +1,22 @@
+[
+    {
+      "airline": "United Airlines",
+      "flight_number": "UA341",
+      "departure_airport": "SEA",
+      "destination_airport": "EWR",
+      "departure_time": "Mon, 11 Mar 2024 10:00:00 GMT",
+      "arrival_time": "Mon, 11 Mar 2024 16:00:00 GMT",
+      "connections": 0,
+      "class": "Economy"
+    },
+    {
+        "airline": "United Airlines",
+        "flight_number": "UA342",
+        "departure_airport": "EWR",
+        "destination_airport": "SEA",
+        "departure_time": "Mon, 11 Mar 2024 20:00:00 GMT",
+        "arrival_time": "Mon, 12 Mar 2024 03:00:00 GMT",
+        "connections": 0,
+        "class": "Economy"
+    }
+]
