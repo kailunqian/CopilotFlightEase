@@ -10,7 +10,7 @@ paths:
     get:
       operationId: getFlights
       summary: Get a list of flights matching the specified criteria
-      description: Returns a list of flights, optionally filtered by providing the departure airport, destination airport, departure date, and connections as query parameters
+      description: Returns a list of flights, optionally filtered by providing the departure airport, destination airport, departure date range start and end, and connections as query parameters
       parameters:
         - name: departure
           in: query
@@ -26,7 +26,19 @@ paths:
             type: string
         - name: date
           in: query
-          description: The departure date
+          description: The exact departure date of the flight
+          required: false
+          schema:
+            type: string
+        - name: dateRangeStart
+          in: query
+          description: The earliest possible departure date of the flight
+          required: false
+          schema:
+            type: string
+        - name: dateRangeEnd
+          in: query
+          description: The latest possible departure date of the flight
           required: false
           schema:
             type: string
@@ -88,3 +100,6 @@ components:
           description: The class of the flight ticket
           items:
             $ref: '#/components/schemas/FlightClassesEnum'
+        price:
+          type: integer
+          description: The price of the ticket
