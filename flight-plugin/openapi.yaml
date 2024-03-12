@@ -56,9 +56,9 @@ components:
     FlightClassesEnum:
       type: string
       enum:
-        - economy
-        - business
-        - first
+        - Economy
+        - Business
+        - First
     Flight:
       type: object
       properties:
@@ -87,4 +87,4 @@ components:
           type: string
           description: The class of the flight ticket
           items:
-            $ref: '#/components/schemas/AmenitiesEnum'
+            $ref: '#/components/schemas/FlightClassesEnum'
