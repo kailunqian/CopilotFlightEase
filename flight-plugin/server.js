@@ -1,5 +1,6 @@
 import express from "express";
 import getFlights from "./get-flights.js"
+import getCalendar from "./get-calendar.js"
 import path from "path";
 import cors from "cors";
 
@@ -18,6 +19,15 @@ app.get("/get-flights", (req, res) => {
     } catch (e) {
       res.status(400).send({ error: e.message });
     }
+});
+
+app.get("/get-calendar", (req, res) => {
+  try {
+    const calendar = getCalendar();
+    res.send(calendar);
+  } catch (e) {
+    res.status(400).send({ error: e.message });
+  }
 });
 
 app.get("/openapi.yaml", (req, res) => {

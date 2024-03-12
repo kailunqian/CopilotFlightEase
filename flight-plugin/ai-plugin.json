@@ -1,7 +1,7 @@
 {
     "schema_version": "v1",
     "name_for_model": "copilotflightsearch",
-    "description_for_model": "Plugin for finding flight tickets for sale. Use it whenever a user asks about flight tickets for sale. This plugin can be used to search for flight tickets from and to particular departure and destination airports, and on a given departure date, with max number of connections and for paritcular class",
+    "description_for_model": "Plugin for finding flight tickets for sale. Use it whenever a user asks about flight tickets for sale. This plugin can be used to search for flight tickets from and to particular departure and destination airports, and on a given departure date, with max number of connections and for particular class, get calendar events",
     "name_for_human": "Copilot Flight Search",
     "description_for_human": "Find up-to-date, detailed flight tickets for sale",
     "api": {
