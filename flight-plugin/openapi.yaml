@@ -1,7 +1,7 @@
 openapi: 3.0.1
 info:
   title: Flights Search API
-  description: Finds up to date and detailed flight tickets
+  description: Finds up to date and detailed flight tickets and get your calendar events
   version: 0.1.0
 servers:
   - url: http://localhost:8080
@@ -63,6 +63,39 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Flight'
+  /get-calendar:
+    get:
+      operationId: getCalendar
+      summary: Get you calendar events
+      description: Returns your calendar events, optionally filtered by providing the event name, start time, and end time as query parameters
+      parameters:
+        - name: event
+          in: query
+          description: The event name
+          required: false
+          schema:
+            type: string
+        - name: meetingStart
+          in: query
+          description: The start time of the event
+          required: false
+          schema:
+            type: string
+        - name: meetingEnd
+          in: query
+          description: The end time of the event
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK - Returns a list of calendar events
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Event'
 components:
   schemas:
     FlightClassesEnum:
@@ -103,3 +136,15 @@ components:
         price:
           type: integer
           description: The price of the ticket
+    Event:
+      type: object
+      properties:
+        event:
+          type: string
+          description: The name of the event
+        meetingStart:
+          type: string
+          description: The start time of the event
+        meetingEnd:
+          type: string
+          description: The end time of the event
