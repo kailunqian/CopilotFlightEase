@@ -124,7 +124,7 @@ paths:
     get:
       operationId: bookFlights
       summary: Book flight
-      description: book flight beased on search on copilot
+      description: book flight based on search on copilot
       parameters:
         - name: airline
           in: query
