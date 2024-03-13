@@ -4,7 +4,7 @@ info:
   description: Finds up to date and detailed flight tickets and get your calendar events
   version: 0.1.0
 servers:
-  - url: https://2t7r3lvw-8080.usw2.devtunnels.ms/
+  - url: https://x.ms/
 paths:
   /get-accounts:
     get:
@@ -230,7 +230,7 @@ components:
           description: The destination airport of the flight
         departure_time:
           type: string
-          description: The depature time of the flight
+          description: The departure time of the flight
         arrival_time:
           type: string
           description: The arrival time of the flight
@@ -251,6 +251,11 @@ components:
         ticket_link:
           type: string
           description: The link to the ticket
+        event:
+          type: object
+          description: The event on the same flight day might cause conflict with flight
+          items:
+            $ref: '#/components/schemas/Event'
     Event:
       type: object
       properties:
