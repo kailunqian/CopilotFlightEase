@@ -1,6 +1,7 @@
 import express from "express";
 import getFlights from "./get-flights.js"
 import getCalendar from "./get-calendar.js"
+import getAccounts from "./get-accounts.js"
 import path from "path";
 import cors from "cors";
 
