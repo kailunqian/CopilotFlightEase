@@ -1,0 +1,10 @@
+[
+  {
+    "firstName": "elbert",
+    "lastName": "einstein",
+    "id": "elberteinstein",
+    "birthday": "03/14/1879",
+    "phoneNumber": "11111111",
+    "email": "einstein@einstein.com"
+  }
+]
