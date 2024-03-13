@@ -4,7 +4,7 @@ info:
   description: Finds up to date and detailed flight tickets and get your calendar events
   version: 0.1.0
 servers:
-  - url: http://localhost:8080
+  - url: https://2t7r3lvw-8080.usw2.devtunnels.ms/
 paths:
   /get-account:
     get:
@@ -199,3 +199,24 @@ components:
         meetingEnd:
           type: string
           description: The end time of the event
+    account:
+      type: object
+      properties:
+        firstName:
+          type: string
+          description:firstName
+        lastName:
+          type: string
+          description: lastName
+        id:
+          type: string
+          description: id
+        phoneNUmber:
+          type: string
+          description: phoneNUmber
+        email:
+          type: string
+          description: email
+        birthday:
+          type: string
+          description: birthday
