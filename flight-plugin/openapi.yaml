@@ -6,46 +6,46 @@ info:
 servers:
   - url: https://2t7r3lvw-8080.usw2.devtunnels.ms/
 paths:
-  /get-account:
+  /get-accounts:
     get:
-      operationId: getAccount
+      operationId: getAccounts
       summary: Get your account info
       description: Returns your firstname, lastname, birthday, phonenumber, id and email
       parameters:
         - name: firstName
           in: query
           description: firstName
-          required: yes
+          required: false
           schema:
             type: string
         - name: lastName
           in: query
           description: lastName
-          required: yes
+          required: false
           schema:
             type: string
         - name: phoneNumber
           in: query
           description: phoneNumber
-          required: yes
+          required: false
           schema:
             type: string
         - name: id
           in: query
           description: id
-          required: yes
+          required: false
           schema:
             type: string
         - name: email
           in: query
           description: email
-          required: yes
+          required: false
           schema:
             type: string
         - name: birthday
           in: query
           description: birthday
-          required: yes
+          required: false
           schema:
             type: string
       responses:
@@ -56,7 +56,7 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/Acount'
+                  $ref: '#/components/schemas/Account'
   /get-flights:
     get:
       operationId: getFlights
@@ -199,21 +199,21 @@ components:
         meetingEnd:
           type: string
           description: The end time of the event
-    account:
+    Account:
       type: object
       properties:
         firstName:
           type: string
-          description:firstName
+          description: firstName
         lastName:
           type: string
           description: lastName
         id:
           type: string
           description: id
-        phoneNUmber:
+        phoneNumber:
           type: string
-          description: phoneNUmber
+          description: phoneNumber
         email:
           type: string
           description: email
