@@ -25,7 +25,7 @@ app.get("/get-flights", (req, res) => {
 });
 
 
-app.get("/get-account", (req, res) => {
+app.get("/get-accounts", (req, res) => {
   try {
     const accounts = getAccounts();
     res.send(accounts);
