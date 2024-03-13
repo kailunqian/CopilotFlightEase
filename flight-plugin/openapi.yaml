@@ -48,6 +48,12 @@ paths:
           required: false
           schema:
             type: string
+        - name: payment
+          in: query
+          description: payment method
+          required: false
+          schema: 
+            $ref: '#/components/schemas/Payment'
       responses:
         '200':
           description: OK - Returns a list of accounts
@@ -114,6 +120,43 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Flight'
+  /book:
+    get:
+      operationId: bookFlights
+      summary: Book flight
+      description: book flight beased on search on copilot
+      parameters:
+        - name: airline
+          in: query
+          description: airline name
+          required: true
+          schema:
+            type: string
+        - name: departure
+          in: query
+          description: The departure airport to search in
+          required: true
+          schema:
+            type: string
+        - name: destination
+          in: query
+          description: The destination airport to search in
+          required: true
+          schema:
+            type: string
+        - name: date
+          in: query
+          description: The exact departure date of the flight
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Ok
+          content:
+            text/plain:
+              schema:
+                type: string
   /get-calendar:
     get:
       operationId: getCalendar
@@ -155,6 +198,21 @@ components:
         - Economy
         - Business
         - First
+    Payment:
+      type: object
+      properties:
+        number:
+          type: string
+          description: number
+        expirationDate:
+          type: string
+          description: expirationDate
+        cvv:
+          type: string
+          description: cvv
+        name:
+          type: string
+          description: name
     Flight:
       type: object
       properties:
