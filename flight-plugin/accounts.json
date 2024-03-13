@@ -5,6 +5,12 @@
     "id": "elberteinstein",
     "birthday": "03/14/1879",
     "phoneNumber": "11111111",
-    "email": "einstein@einstein.com"
+    "email": "einstein@einstein.com",
+    "payment": {
+      "number": "1111111111111111",
+      "cvv": "111",
+      "name": "einstein",
+      "expirationDate": "01/2020"
+    }
   }
 ]

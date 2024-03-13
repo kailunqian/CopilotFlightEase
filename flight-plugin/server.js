@@ -2,6 +2,7 @@ import express from "express";
 import getFlights from "./get-flights.js"
 import getCalendar from "./get-calendar.js"
 import getAccounts from "./get-accounts.js"
+import bookFlights from "./post-flight.js";
 import path from "path";
 import cors from "cors";
 
@@ -43,6 +44,24 @@ app.get("/get-calendar", (req, res) => {
     res.status(400).send({ error: e.message });
   }
 });
+
+app.get("/book", (req, res) => {
+  const airline = req.query.airline;
+  const departure_airport = req.query.departure;
+  const destination_airport = req.query.destination;
+  const date = req.query.date;
+  const flightClass = req.query.class;
+
+  try {
+    const result = bookFlights(airline, departure_airport, destination_airport, date, flightClass);
+    if (result === "success")
+      res.send("success");
+    else 
+      rres.status(400).send({ error: result });
+  } catch (e) {
+    res.status(400).send({ error: e.message });
+  }
+})
 
 app.get("/openapi.yaml", (req, res) => {
     res.sendFile(path.resolve() + "/openapi.yaml");
