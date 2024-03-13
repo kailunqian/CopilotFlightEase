@@ -6,6 +6,57 @@ info:
 servers:
   - url: http://localhost:8080
 paths:
+  /get-account:
+    get:
+      operationId: getAccount
+      summary: Get your account info
+      description: Returns your firstname, lastname, birthday, phonenumber, id and email
+      parameters:
+        - name: firstName
+          in: query
+          description: firstName
+          required: yes
+          schema:
+            type: string
+        - name: lastName
+          in: query
+          description: lastName
+          required: yes
+          schema:
+            type: string
+        - name: phoneNumber
+          in: query
+          description: phoneNumber
+          required: yes
+          schema:
+            type: string
+        - name: id
+          in: query
+          description: id
+          required: yes
+          schema:
+            type: string
+        - name: email
+          in: query
+          description: email
+          required: yes
+          schema:
+            type: string
+        - name: birthday
+          in: query
+          description: birthday
+          required: yes
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK - Returns a list of accounts
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Acount'
   /get-flights:
     get:
       operationId: getFlights
