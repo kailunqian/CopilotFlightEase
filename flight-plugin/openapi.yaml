@@ -187,6 +187,12 @@ components:
         price:
           type: integer
           description: The price of the ticket
+        duration:
+          type: string
+          description: The duration of the flight
+        ticket_link:
+          type: string
+          description: The link to the ticket
     Event:
       type: object
       properties:

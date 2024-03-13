@@ -8,7 +8,9 @@
       "arrival_time": "Mon, 18 Mar 2024 16:00:00",
       "connections": 0,
       "class": "Economy",
-      "price": 258
+      "price": 258,
+      "duration": "5hr 5min",
+      "ticket_link": "https://www.united.com/en/us/traveler/choose-travelers?src=uatravel&cartId=30C9C8B5-92D5-4B4C-91BF-7C69A2EB9738&type=ext"
     },
     {
       "airline": "Delta Airlines",
@@ -19,7 +21,9 @@
       "arrival_time": "Tue, 19 Mar 2024 14:00:00",
       "connections": 0,
       "class": "Economy",
-      "price": 238
+      "price": 238,
+      "duration": "8hr",
+      "ticket_link": "https://www.delta.com/complete-purchase/trip-summary?cartId=2cbfa952-1133-4f64-abd0-0904f8261fc5&cacheKeySuffix=dc7df141-e2a1-4a46-914e-ae076c4f29f6&app=sl-sho&itinSegment%5B0%5D=0:E:SEA:ATL:DL:8783:MAR:19:2024:01P&mkcpgn=MS_GFSR_DESK_DOM_TR_DL_140414_GFSDESK_US&itinSegment%5B1%5D=0:E:ATL:EWR:DL:2552:MAR:19:2024:10P&paxCount=1&currencyCd=USD&numOfSegments=2&cabin=BASIC-ECONOMY&exitCountry=US&vendorID=Google&vendorRedirectFlag=true&tripType=oneWay&fareBasis=KA0NA0BQ:KA0NA0BQ&price=297.60&vendorReferrerUrl=https:%2F%2Fwww.google.com%2F"
     },
     {
       "airline": "United Airlines",
@@ -30,7 +34,9 @@
       "arrival_time": "Wed, 20 Mar 2024 16:00:00",
       "connections": 0,
       "class": "Economy",
-      "price": 248
+      "price": 248,
+      "duration": "5hr 22min",
+      "ticket_link": "https://www.united.com/en/us/traveler/choose-travelers?src=uatravel&cartId=0F88A4DD-E00F-40EB-915D-89EBC3D3AE93&type=ext"
     },
     {
         "airline": "United Airlines",
@@ -41,7 +47,9 @@
         "arrival_time": "Tue, 19 Mar 2024 03:00:00",
         "connections": 0,
         "class": "Economy",
-        "price": 238
+        "price": 238,
+        "duration": "5hr 5min",
+        "ticket_link": "https://www.united.com/en/us/traveler/choose-travelers?src=uatravel&cartId=57B8C603-FC97-462B-92B0-66662CB346AA&type=ext"
     },
     {
       "airline": "Alaska Airlines",
@@ -52,7 +60,9 @@
       "arrival_time": "Mon, 25 Mar 2024 20:00:00",
       "connections": 0,
       "class": "Economy",
-      "price": 198
+      "price": 198,
+      "duration": "5hr 25min",
+      "ticket_link": "https://www.google.com/travel/flights/checkout?tfs=CBwQAhqUARIKMjAyNC0wMy0yNSJ0CgNTRUESCjIwMjQtMDMtMjUaA0VXUioCQVMyAzI4MDpTCAESAVgaCE9IN09BVkJOIgJBUyoDMjgwMhkyMDI0LTAzLTI1VDA2OjMwOjAwLTA3OjAwOhkyMDI0LTAzLTI1VDE0OjU1OjAwLTA0OjAwQgM3TTlqBwgBEgNTRUFyBwgBEgNFV1JAAUgBcAGCAQsI____________AZgBAqIB3QEKAkFTEg8KDQoDVVNEEI8BGIDC1y8aCwoCQVMSBVNBVkVSIjRIOUVKLWl6TnpmSzhBQUFkVmdCRC0tLS0tLS0tLS1wZm56M0FBQUFBR1h5QXlvRm1Pb3NBMgQIASAAQnNBRG93UE9MR05Obl9SazhMc2FQYU5WYXJkM1lIMHprOWx3VjNxWE5tc3NRSDc0Qndndy1mZUVTdWMyUWZLdWJpc2J4N2IwSS1GTHM0aWxLMkZjRFl1ekZRbHZkQlRXd3ZDX0FDU3BweS0xdlM3QnJabHdvSghDQUlRQVE9PQ&tfu=EgIIASIDCgEw&hl=en&gl=us&curr=USD&gclid=ADowPOLGNNn_Rk8LsaPaNVard3YH0zk9lwV3qXNmssQH74Bwgw-feESuc2QfKubisbx7b0I-FLs4ilK2FcDYuzFQlvdBTWwvC_ACSppy-1vS7BrZlwo&gclsrc=gf"
     },
     {
       "airline": "Alaska Airlines",
@@ -63,7 +73,9 @@
       "arrival_time": "Sat, 30 Mar 2024 03:00:00",
       "connections": 0,
       "class": "Economy",
-      "price": 218
+      "price": 218,
+      "duration": "5hr 14min",
+      "ticket_link": "https://www.google.com/travel/flights/checkout?tfs=CBwQAhqUARIKMjAyNC0wMy0yOSJ0CgNTRUESCjIwMjQtMDMtMjkaA0VXUioCQVMyAzI5ODpTCAESAVgaCFNIME9BVkJOIgJBUyoDMjk4MhkyMDI0LTAzLTI5VDIyOjQ1OjAwLTA3OjAwOhkyMDI0LTAzLTMwVDA2OjU5OjAwLTA0OjAwQgM3TTlqBwgBEgNTRUFyBwgBEgNFV1JAAUgBcAGCAQsI____________AZgBAqIB1wEKAkFTEg8KDQoDVVNEENICGIDvuTQaCwoCQVMSBVNBVkVSIjRIOUVKLWl6TnpmSzhBQUFjOHdCRC0tLS0tLS0tLS1wZm56M0FBQUFBR1h5QXZrSEpoRVNBQnNBRG93UE9KNE4yU2ZDczEycHZka19nYkprRHEyd3ZUb2R0VVVpRkxNajNaMnl4d0J4aFNEWm9oVFVUYVhkNWF5bkFuRFRpZXlfbHdSN19yV3RiVGJ0Vm5KZmZ0XzRvMi13T0hmTzhXTzVFZV9tV3hjYmk0SghDQUlRQVE9PQ&tfu=EgIIASIDCgEw&hl=en&gl=us&curr=USD&gclid=ADowPOJ4N2SfCs12pvdk_gbJkDq2wvTodtUUiFLMj3Z2yxwBxhSDZohTUTaXd5aynAnDTiey_lwR7_rWtbTbtVnJfft_4o2-wOHfO8WO5Ee_mWxcbi4&gclsrc=gf"
     },
     {
       "airline": "Alaska Airlines",
@@ -74,7 +86,9 @@
       "arrival_time": "Mon, 25 Mar 2024 20:00:00",
       "connections": 0,
       "class": "Business",
-      "price": 498
+      "price": 498,
+      "duration": "5hr 25min",
+      "ticket_link": "https://www.google.com/travel/flights/checkout?tfs=CBwQAhqUARIKMjAyNC0wMy0yNSJ0CgNTRUESCjIwMjQtMDMtMjUaA0VXUioCQVMyAzI4MDpTCAQSAUQaCFNIME9BVkZOIgJBUyoDMjgwMhkyMDI0LTAzLTI1VDA2OjMwOjAwLTA3OjAwOhkyMDI0LTAzLTI1VDE0OjU1OjAwLTA0OjAwQgM3TTlqBwgBEgNTRUFyBwgBEgNFV1JAAUgBcAGCAQsI____________AZgBAqIB1wEKAkFTEg8KDQoDVVNEEJQGGIDC1y8aCwoCQVMSBUZJUlNUIjRITlE4Sk41dUx4QTRBQUFndkFCRC0tLS0tLS0tcGZiZ3UyMUFBQUFBR1h5QXNjRGQxMEtBQnNBRG93UE9JQ29iQlcwQVRxeGpYY1lwT1k5YS1zRDNhdjNLZHhva3hhTTlNa2FqUEx3b2s2WXFVUU9qeFBUU2phUmJZN193ZWRsWVVBMXNfa3l1M2R1c2llc0UweWkydk54RmRCMlV2cGpGaTRmdU03by13SghDQUlRQVE9PQ&tfu=EgIIASIDCgEw&hl=en&gl=us&curr=USD&gclid=ADowPOICobBW0ATqxjXcYpOY9a-sD3av3KdxokxaM9MkajPLwok6YqUQOjxPTSjaRbY7_wedlYUA1s_kyu3dusiesE0yi2vNxFdB2UvpjFi4fuM7o-w&gclsrc=gf"
     },
     {
       "airline": "Alaska Airlines",
@@ -85,7 +99,9 @@
       "arrival_time": "Sat, 30 Mar 2024 03:00:00",
       "connections": 0,
       "class": "Business",
-      "price": 518
+      "price": 518,
+      "duration": "5hr 14min",
+      "ticket_link": "https://www.google.com/travel/flights/checkout?tfs=CBwQAhqUARIKMjAyNC0wMy0yOSJ0CgNTRUESCjIwMjQtMDMtMjkaA0VXUioCQVMyAzI5ODpTCAESAVMaCFNIME9BVk1OIgJBUyoDMjk4MhkyMDI0LTAzLTI5VDIyOjQ1OjAwLTA3OjAwOhkyMDI0LTAzLTMwVDA2OjU5OjAwLTA0OjAwQgM3TTlqBwgBEgNTRUFyBwgBEgNFV1JAAUgBcAGCAQsI____________AZgBAqIB1gEKAkFTEg8KDQoDVVNEEIQDGIDC1y8aCgoCQVMSBE1BSU4iNEh2bDVvVHhSRnZ3a0FBQWl0QUJELS0tLS0tLS0tcGZudjE5QUFBQUFHWHlBbzBOU091LUFCc0FEb3dQT0syVTg0RnFUU3A0Vmw1T1NQcFJuTlFSQ3EyWVpOaElCcDU2Q3FpaGF5TGZDWkdOdU9GamlleWJ2b3BMdVp0eWdYOURTbXJhN0Q3UEZ2bXdxSWJVQ3gzaUd6WkJOT0Y5b0lHQnBDeTVnMXNZTXdKCENBSVFBUT09&tfu=EgIIASIDCgEw&hl=en&gl=us&curr=USD&gclid=ADowPOK2U84FqTSp4Vl5OSPpRnNQRCq2YZNhIBp56CqihayLfCZGNuOFjieybvopLuZtygX9DSmra7D7PFvmwqIbUCx3iGzZBNOF9oIGBpCy5g1sYMw&gclsrc=gf"
     },
     {
       "airline": "American Airlines",
@@ -96,7 +112,9 @@
       "arrival_time": "Sat, 16 Mar 2024 03:00:00",
       "connections": 1,
       "class": "Economy",
-      "price": 128
+      "price": 128,
+      "duration": "11hr 2min",
+      "ticket_link": "https://www.aa.com/booking/passengers?fromMetaSearch=true&bookingPathStateId=1710359121477-918&ischangedfare=false&ischangedservice=false&locale=en_US&c=MSE%7CGFS%7C20240313%7CDST%7CDST%7CWEB%7C%7CBB%7CBB%7CGFSE-0_1_0_1&gclid=ADowPOIb5OJ4wO9S1E2ikYH4PB6ZwtC2OmV_r0GS4D53bzwJPu0A4ojk6eQYg7GuYQ1eaWTNrzOKM_GNeRH28ZxJDtiRvK6mMbW9rdf7B-Zh5Z7B0_0&gclsrc=gf"
     },
     {
       "airline": "American Airlines",
@@ -107,7 +125,9 @@
       "arrival_time": "Tue, 26 Mar 2024 03:00:00",
       "connections": 1,
       "class": "Economy",
-      "price": 148
+      "price": 148,
+      "duration": "9hr 15min",
+      "ticket_link": "https://www.aa.com/booking/passengers?fromMetaSearch=true&bookingPathStateId=1710359061770-451&ischangedfare=false&ischangedservice=false&locale=en_US&c=MSE%7CGFS%7C20240313%7CDST%7CDST%7CWEB%7C%7CBB%7CBB%7CGFSE-0_1_0_1&gclid=ADowPOLJlLN6_2v1IfPlnNPenn7ZRxjCdnD_lWKajeO44etoKSWXAUQTmk7ogtk8daoN5EwOShYNhp9UCRmo2Ha-rFmxOO9HE8VkDf8-kLMwvUo3r-U&gclsrc=gf"
     },
     {
       "airline": "American Airlines",
@@ -118,7 +138,9 @@
       "arrival_time": "Thu, 16 May 2024 03:00:00",
       "connections": 0,
       "class": "Economy",
-      "price": 128
+      "price": 128,
+      "duration": "10hr 19min",
+      "ticket_link": "https://www.aa.com/booking/passengers?fromMetaSearch=true&bookingPathStateId=1710358996435-196&ischangedfare=false&ischangedservice=false&locale=en_US&c=MSE%7CGFS%7C20240313%7CDST%7CDST%7CWEB%7C%7CBB%7CBB%7CGFSE-0_1_0_1&gclid=ADowPOJnv9kxh_hmFplzT9QcoePuLtFdhBGwsGXXkf4G0PIeFYR4msbhu_ITESS-mFoVljrQ_MDtLAHCMR8GdIuRYQ_7sAXyU3wnxc0FaAejdzofvIY&gclsrc=gf"
     },
     {
       "airline": "American Airlines",
@@ -129,7 +151,9 @@
       "arrival_time": "Tue, 28 May 2024 03:00:00",
       "connections": 0,
       "class": "Economy",
-      "price": 148
+      "price": 278,
+      "duration": "19hr 30min",
+      "ticket_link": "https://www.aa.com/booking/passengers?fromMetaSearch=true&bookingPathStateId=1710358916447-579&ischangedfare=false&ischangedservice=false&locale=en_US&c=MSE%7CGFS%7C20240313%7CDST%7CDST%7CWEB%7C%7CBB%7CBB%7CGFSE-0_1_0_1&gclid=ADowPOKaIQNY1GjSeBjnnqobYnrh3LinKSDtCpINwzwD6Fh63VAU42zFqVMxQieMeJXvP92Vhxc8B-J6Rv8xH1byzw1_wi3-mmOMZX--Jgnr_wqeYiA&gclsrc=gf"
     },
     {
       "airline": "American Airlines",
@@ -140,7 +164,9 @@
       "arrival_time": "Tue, 18 June 2024 06:36:00",
       "connections": 0,
       "class": "Economy",
-      "price": 128
+      "price": 128,
+      "duration": "7hr 10min",
+      "ticket_link": "https://www.aa.com/booking/passengers;jsessionid=4EAEE5BE2E92BCA2A7E0D63C41148E28?fromMetaSearch=true&bookingPathStateId=1710358849207-16&ischangedfare=false&ischangedservice=false&locale=en_US&c=MSE%7CGFS%7C20240313%7CDST%7CDST%7CWEB%7C%7CBB%7CBB%7CGFSE-0_1_0_1&gclid=ADowPOL2hwptCNc784b6KoYg1OUlnFmaNu50ZQWFD92hmDaxvlQfq851ZEt3yS2OlVjFMYN3KQprsiOoEzTMxOyXihko-H3-y72PieShrQ9QiIbHwbk&gclsrc=gf"
     },
     {
       "airline": "American Airlines",
@@ -151,6 +177,8 @@
       "arrival_time": "Mon, 24 June 2024 11:08:00",
       "connections": 0,
       "class": "Economy",
-      "price": 148
+      "price": 148,
+      "duration": "5hr 10min",
+      "ticket_link": "https://www.alaskaair.com/Shopping/Cart/AddNewFlight?A=1&C=0&SITE_PREF=full&FT=ow&F1=SEA|EWR|06/24/2024|298,AS|S&FARE=328.10&frm=cart&meta=GOO_CS_X&utm_source=google&utm_medium=meta&utm_campaign=book_as_site&gclid=ADowPOLtFfNxtvACtdtpSZdejO4pd-Ue96hIi0f6KRUwK3CCH2Y0dYwts3I4Gt1C4DpHSY4sPCFX1cNVgDQrwvpqDv4-yhxo5ZOEFBE4tyWhatqfnTo&gclsrc=gf"
     }
 ]
