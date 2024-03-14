@@ -1,11 +1,68 @@
 openapi: 3.0.1
 info:
   title: Flights Search API
-  description: Finds up to date and detailed flight tickets
+  description: Finds up to date and detailed flight tickets and get your calendar events
   version: 0.1.0
 servers:
-  - url: http://localhost:8080
+  - url: https://x.ms/
 paths:
+  /get-accounts:
+    get:
+      operationId: getAccounts
+      summary: Get your account info
+      description: Returns your firstname, lastname, birthday, phonenumber, id and email
+      parameters:
+        - name: firstName
+          in: query
+          description: firstName
+          required: false
+          schema:
+            type: string
+        - name: lastName
+          in: query
+          description: lastName
+          required: false
+          schema:
+            type: string
+        - name: phoneNumber
+          in: query
+          description: phoneNumber
+          required: false
+          schema:
+            type: string
+        - name: id
+          in: query
+          description: id
+          required: false
+          schema:
+            type: string
+        - name: email
+          in: query
+          description: email
+          required: false
+          schema:
+            type: string
+        - name: birthday
+          in: query
+          description: birthday
+          required: false
+          schema:
+            type: string
+        - name: payment
+          in: query
+          description: payment method
+          required: false
+          schema: 
+            $ref: '#/components/schemas/Payment'
+      responses:
+        '200':
+          description: OK - Returns a list of accounts
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Account'
   /get-flights:
     get:
       operationId: getFlights
@@ -14,26 +71,26 @@ paths:
       parameters:
         - name: departureAirport
           in: query
-          description: The departure airport
-          required: true
+          description: The departure airport to search in
+          required: false
           schema:
             type: string
         - name: destinationAirport
           in: query
-          description: The destination airport
-          required: true
+          description: The destination airport to search in
+          required: false
           schema:
             type: string
         - name: departureCity
           in: query
-          description: The departure city
-          required: true
+          description: The departure city to search in
+          required: false
           schema:
             type: string
         - name: destinationCity
           in: query
-          description: The destination city
-          required: true
+          description: The destination city to search in
+          required: false
           schema:
             type: string
         - name: date
@@ -54,9 +111,9 @@ paths:
           required: false
           schema:
             type: string
-        - name: connections
+        - name: stops
           in: query
-          description: The number of connections
+          description: The number of stops
           required: false
           schema:
             type: integer
@@ -75,6 +132,76 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Flight'
+  /book:
+    get:
+      operationId: bookFlights
+      summary: Book flight
+      description: book flight based on search on copilot
+      parameters:
+        - name: airline
+          in: query
+          description: airline name
+          required: true
+          schema:
+            type: string
+        - name: departure
+          in: query
+          description: The departure airport to search in
+          required: true
+          schema:
+            type: string
+        - name: destination
+          in: query
+          description: The destination airport to search in
+          required: true
+          schema:
+            type: string
+        - name: date
+          in: query
+          description: The exact departure date of the flight
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Ok
+          content:
+            text/plain:
+              schema:
+                type: string
+  /get-calendar:
+    get:
+      operationId: getCalendar
+      summary: Get you calendar events
+      description: Returns your calendar events, optionally filtered by providing the event name, start time, and end time as query parameters
+      parameters:
+        - name: event
+          in: query
+          description: The event name
+          required: false
+          schema:
+            type: string
+        - name: meetingStart
+          in: query
+          description: The start time of the event
+          required: false
+          schema:
+            type: string
+        - name: meetingEnd
+          in: query
+          description: The end time of the event
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK - Returns a list of calendar events
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Event'
 components:
   schemas:
     FlightClassesEnum:
@@ -83,6 +210,21 @@ components:
         - Economy
         - Business
         - First
+    Payment:
+      type: object
+      properties:
+        number:
+          type: string
+          description: number
+        expirationDate:
+          type: string
+          description: expirationDate
+        cvv:
+          type: string
+          description: cvv
+        name:
+          type: string
+          description: name
     Flight:
       type: object
       properties:
@@ -106,13 +248,13 @@ components:
           description: The destination city of the flight
         departure_time:
           type: string
-          description: The depature time of the flight
+          description: The departure time of the flight
         arrival_time:
           type: string
           description: The arrival time of the flight
-        connections:
+        stops:
           type: integer
-          description: The number of connections
+          description: The number of stops
         class:
           type: string
           description: The class of the flight ticket
@@ -121,3 +263,47 @@ components:
         price:
           type: integer
           description: The price of the ticket
+        duration:
+          type: string
+          description: The duration of the flight
+        ticket_link:
+          type: string
+          description: The link to the ticket
+        event:
+          type: object
+          description: The event on the same flight day might cause conflict with flight
+          items:
+            $ref: '#/components/schemas/Event'
+    Event:
+      type: object
+      properties:
+        event:
+          type: string
+          description: The name of the event
+        meetingStart:
+          type: string
+          description: The start time of the event
+        meetingEnd:
+          type: string
+          description: The end time of the event
+    Account:
+      type: object
+      properties:
+        firstName:
+          type: string
+          description: firstName
+        lastName:
+          type: string
+          description: lastName
+        id:
+          type: string
+          description: id
+        phoneNumber:
+          type: string
+          description: phoneNumber
+        email:
+          type: string
+          description: email
+        birthday:
+          type: string
+          description: birthday
