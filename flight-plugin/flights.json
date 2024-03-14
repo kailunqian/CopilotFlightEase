@@ -180,5 +180,70 @@
       "price": 148,
       "duration": "5hr 10min",
       "ticket_link": "https://www.alaskaair.com/Shopping/Cart/AddNewFlight?A=1&C=0&SITE_PREF=full&FT=ow&F1=SEA|EWR|06/24/2024|298,AS|S&FARE=328.10&frm=cart&meta=GOO_CS_X&utm_source=google&utm_medium=meta&utm_campaign=book_as_site&gclid=ADowPOLtFfNxtvACtdtpSZdejO4pd-Ue96hIi0f6KRUwK3CCH2Y0dYwts3I4Gt1C4DpHSY4sPCFX1cNVgDQrwvpqDv4-yhxo5ZOEFBE4tyWhatqfnTo&gclsrc=gf"
-    }
+    },
+    {
+      "airline": "Alaska Airlines",
+      "flight_number": "AS398",
+      "departure_airport": "SEA",
+      "destination_airport": "EWR",
+      "departure_time": "Mon, 05 August 2024 10:06:00",
+      "arrival_time": "Mon, 05 August 2024 18:28:00",
+      "connections": 0,
+      "class": "Economy",
+      "price": 559,
+      "duration": "5hr 22min",
+      "ticket_link": "https://www.alaskaair.com/search/results?O=SEA&D=EWR&OD=2024-08-05&A=1&C=0&L=0&RT=false"
+    },
+    {
+      "airline": "United Airlines",
+      "flight_number": "UA1742",
+      "departure_airport": "SEA",
+      "destination_airport": "EWR",
+      "departure_time": "Mon, 05 August 2024 06:00:00",
+      "arrival_time": "Mon, 05 August 2024 14:12:00",
+      "connections": 0,
+      "class": "Economy",
+      "price": 273,
+      "duration": "5hr 22min",
+      "ticket_link": "https://www.united.com/en/us/traveler/choose-travelers?cartId=E2AE52DB-A441-4535-A273-E6E5B7CC97B3&tqp=R"
+    },
+    {
+      "airline": "United Airlines",
+      "flight_number": "UA1631,UA2127",
+      "departure_airport": "SEA",
+      "destination_airport": "EWR",
+      "departure_time":  "Mon, 05 August 2024 23:35:00",
+      "arrival_time":  "Tue, 06 August 2024 09:51:00",
+      "connections": 1,
+      "class": "Economy",
+      "price": 200.92,
+      "duration": "7hr 16min",
+      "ticket_link": "https://www.united.com/en/us/traveler/choose-travelers?cartId=F72090DD-B855-42CE-82E9-EB33E53C86EE&tqp=R"
+    },
+    {
+      "airline": "United Airlines",
+      "flight_number": "UA1742",
+      "departure_airport": "SEA",
+      "destination_airport": "EWR",
+      "departure_time": "Tue, 06 August 2024 06:20:00",
+      "arrival_time": "Tue, 06 August 2024 14:32:00",
+      "connections": 0,
+      "class": "Economy",
+      "price": 208.09,
+      "duration": "5hr 12min",
+      "ticket_link": "https://www.united.com/en/us/traveler/choose-travelers?cartId=4C86DF46-E459-4C9A-8549-6CFA6C48760E&tqp=R"
+    },
+    {
+      "airline": "Delta Airlines",
+      "flight_number": "DL790, DL2567",
+      "departure_airport": "SEA",
+      "destination_airport": "EWR",
+      "departure_time":  "Tue, 06 August 2024 09:53:00",
+      "arrival_time":  "Tue, 06 August 2024 19:29:00",
+      "connections": 1,
+      "class": "Economy",
+      "price": 287.6,
+      "duration": "7hr 16min",
+      "ticket_link": "https://www.bing.com/travel/flight-search?src=SEA&des=EWR&ddate=2024-08-06&isr=0&rdate=2024-08-06&sel=&cls=0&adult=1&child=0&infant=0&FORM=FBL1YC&as=1&ad=0&serpig=&flt=&fltName=&ignrrec=0&hubpage=0&dSugg=0&serp=1&srt=&numberofstops=&scenario=&q=flights+from+SEA-EWR&entrypoint=FBL1YC"
+    } 
 ]
