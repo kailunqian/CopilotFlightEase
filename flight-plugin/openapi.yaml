@@ -12,15 +12,27 @@ paths:
       summary: Get a list of flights matching the specified criteria
       description: Returns a list of flights, optionally filtered by providing the departure airport, destination airport, departure date range start and end, and connections as query parameters
       parameters:
-        - name: departure
+        - name: departureAirport
           in: query
-          description: The departure airport to search in
+          description: The departure airport
           required: true
           schema:
             type: string
-        - name: destination
+        - name: destinationAirport
           in: query
-          description: The destination airport to search in
+          description: The destination airport
+          required: true
+          schema:
+            type: string
+        - name: departureCity
+          in: query
+          description: The departure city
+          required: true
+          schema:
+            type: string
+        - name: destinationCity
+          in: query
+          description: The destination city
           required: true
           schema:
             type: string
@@ -86,6 +98,12 @@ components:
         destination_airport:
           type: string
           description: The destination airport of the flight
+        departure_city:
+          type: string
+          description: The departure city of the flight
+        destination_city:
+          type: string
+          description: The destination city of the flight
         departure_time:
           type: string
           description: The depature time of the flight

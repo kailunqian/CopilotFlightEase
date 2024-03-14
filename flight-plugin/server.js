@@ -7,8 +7,10 @@ const app = express();
 app.use(cors({ origin: "https://www.bing.com" }));
 
 app.get("/get-flights", (req, res) => {
-    const departure_airport = req.query.departure;
-    const destination_airport = req.query.destination;
+    const departure_airport = req.query.departureAirport;
+    const destination_airport = req.query.destinationAirport;
+    const departure_city = req.query.departureCity;
+    const destination_city = req.query.destinationCity;
     const date = req.query.date;
     const dateRangeStart = req.query.dateRangeStart;
     const dateRangeEnd = req.query.dateRangeEnd;
@@ -16,7 +18,7 @@ app.get("/get-flights", (req, res) => {
     const flightClass = req.query.class;
   
     try {
-        const flights = getFlights(departure_airport, destination_airport, date, dateRangeStart, dateRangeEnd, connections, flightClass);
+        const flights = getFlights(departure_airport, destination_airport, departure_city, destination_city, date, dateRangeStart, dateRangeEnd, connections, flightClass);
         res.send(flights);
     } catch (e) {
       res.status(400).send({ error: e.message });

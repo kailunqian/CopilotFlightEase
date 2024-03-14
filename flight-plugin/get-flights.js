@@ -3,7 +3,7 @@ import flights from "./flights.json" assert { type: "json" };
 // Return only the first 5 results.
 const RESULT_LIMIT = 5;
 
-export default function getFlights(departure_airport, destination_airport, date, dateRangeStart, dateRangeEnd, departure_time_end, connections, flightClass) {
+export default function getFlights(departure_airport, destination_airport, departure_city, destination_city, date, dateRangeStart, dateRangeEnd, departure_time_end, connections, flightClass) {
   return flights.filter(flights => {
     const departure_airport_match = departure_airport
       ? flights.departure_airport.toLowerCase() === departure_airport.toLowerCase()
@@ -11,6 +11,14 @@ export default function getFlights(departure_airport, destination_airport, date,
 
     const destination_airport_match = destination_airport
       ? flights.destination_airport.toLowerCase() === destination_airport.toLowerCase()
+      : true;
+
+    const departure_city_match = departure_city
+      ? flights.departure_city.toLowerCase() === departure_city.toLowerCase()
+      : true;
+
+    const destination_city_match = destination_city
+      ? flights.destination_city.toLowerCase() === destination_city.toLowerCase()
       : true;
 
     var departure_date_match = true;
@@ -34,7 +42,7 @@ export default function getFlights(departure_airport, destination_airport, date,
     ? flights.class.toLowerCase() == flightClass.toLowerCase()
     : true;
 
-    return departure_airport_match && destination_airport_match && departure_date_match && connectionsMatch && flightClassMatch;
+    return departure_airport_match && destination_airport_match && departure_city_match && destination_city_match && departure_date_match && connectionsMatch && flightClassMatch;
   }).sort((a, b) => {
     return a.price - b.price;
   }).slice(0, RESULT_LIMIT);
