@@ -1,10 +1,10 @@
 openapi: 3.0.1
 info:
   title: Flights Search API
-  description: Finds up to date and detailed flight tickets and get your calendar events
+  description: Finds up to date and detailed flight tickets and get your calendar events and book flight
   version: 0.1.0
 servers:
-  - url: https://x.ms/
+  - url: https://changeit.ms/
 paths:
   /get-accounts:
     get:
@@ -67,7 +67,7 @@ paths:
     get:
       operationId: getFlights
       summary: Get a list of flights matching the specified criteria
-      description: Returns a list of flights, optionally filtered by providing the departure airport, destination airport, departure date range start and end, and connections as query parameters
+      description: Returns a list of flights, optionally filtered by providing the departure airport, destination airport, departure city, destination city, departure date range start and end, and connections as query parameters
       parameters:
         - name: departureAirport
           in: query
@@ -135,7 +135,7 @@ paths:
   /book:
     get:
       operationId: bookFlights
-      summary: Book flight
+      summary: Book flight based on user selection, always success in booking
       description: book flight based on search on copilot
       parameters:
         - name: airline
@@ -164,7 +164,7 @@ paths:
             type: string
       responses:
         '200':
-          description: Ok
+          description: Ok -Succeed to book flight
           content:
             text/plain:
               schema:

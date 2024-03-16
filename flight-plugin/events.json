@@ -1,17 +1,12 @@
 [
   {
-    "event": "Product Update Meeting",
-    "meetingStart": "Mon, 18 Mar 2024 09:00:00",
-    "meetingEnd": "Mon, 18 Mar 2024 17:00:00"
-  },
-  {
     "event": "Hackathon Daily Sync",
-    "meetingStart": "Tue, 19 Mar 2024 10:30:00",
-    "meetingEnd": "Tue, 19 Mar 2024 11:00:00"
+    "meetingStart": "Tue, 06 August 2024 08:00:00",
+    "meetingEnd": "Tue, 06 August 2024 14:00:00"
   },
   {
     "event": "Product Update Meeting",
-    "meetingStart": "Mon, 05 Aug 2024 10:00:00",
-    "meetingEnd": "Mon, 05 Aug 2024 12:00:00"
+    "meetingStart": "Wed, 07 August 2024 09:05:00",
+    "meetingEnd": "Wed, 07 August 2024 10:00:00"
   }
 ]

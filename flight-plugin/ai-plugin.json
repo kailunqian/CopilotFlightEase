@@ -1,18 +1,18 @@
 {
     "schema_version": "v1",
     "name_for_model": "copilotflightsearch",
-    "description_for_model": "Plugin for get flight tickets with user calendar events, analysis and notifying flight tickets and calendar events have conflicts. Show result to end user in table view",
+    "description_for_model": "Plugin for get flight tickets with user calendar events, analysis and notifying flight tickets and calendar events have conflicts, book flight ticket. Show result to end user in table view. And book flight tickets.",
     "name_for_human": "Copilot Flight Search",
-    "description_for_human": "Find flight tickets with calendar info",  
+    "description_for_human": "Find flight tickets with calendar info, and book flight",  
     "api": {
       "type": "openapi",
-      "url": "https://x/openapi.yaml",
+      "url": "https://changeit.ms/openapi.yaml",
       "is_user_authenticated": false
     },
     "auth": {
         "type": "none"
     },
-    "logo_url": "https://x/logo.png",
+    "logo_url": "https://changeit.devtunnels.ms/logo.png",
     "contact_email": "contact@contoso.com",
     "legal_info_url": "https://contoso.com/legal/",
     "privacy_policy_url": "https://contoso.com/privacy-policy"
